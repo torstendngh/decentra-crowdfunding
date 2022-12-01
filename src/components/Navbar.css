@@ -1,0 +1,66 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.Navbar > .TabContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.Navbar > .LogoContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 256px;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.Navbar > .ButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  min-width: 256px;
+}
+
+.Navbar > .ButtonContainer > .CreateProjectButton {
+  background-color: var(--accent);
+  border: none;
+  color: white;
+
+  font-weight: 500;
+  padding: 0 24px;
+  height: 42px;
+  border-radius: 1000px;
+  cursor: pointer;
+  min-width: 148px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  transition: all 0.1s ease;
+}
+
+.Navbar > .ButtonContainer > .CreateProjectButton:hover {
+  background-color: var(--accent);
+  border: none;
+  color: white;
+
+  transform: scale(1.04);
+}
+
+.Navbar > .ButtonContainer > .ProfileButton {
+  background-color: #d1d1d1;
+  border: none;
+  height: 42px;
+  width: 42px;
+  border-radius: 1000px;
+  cursor: pointer;
+}

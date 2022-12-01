@@ -1,0 +1,22 @@
+.Page {
+  background-color: #F9F9F9;
+  border-radius: 32px 32px 0 0;
+}
+
+.Page :is(h1) {
+  font-size: 128px;
+  margin: 32px 0 32px var(--page-padding-left);
+}
+
+.Page :is(h3) {
+  font-size: 32;
+  color: #BFBFBF;
+  margin: 32px 0 16px var(--page-padding-left);
+}
+
+.CardCarousell {
+  display: flex;
+  padding: 32px var(--page-padding-left) 40px var(--page-padding-left);
+  gap: 32px;
+  overflow: hidden;
+}
