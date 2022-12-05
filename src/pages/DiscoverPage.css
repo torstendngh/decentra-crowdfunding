@@ -1,0 +1,67 @@
+.HighlightedProjectImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+  pointer-events: none;
+  mask-image: linear-gradient(195deg, black, transparent 50%);
+  filter: blur(4px) grayscale(100%);
+  transform: scale(1.04);
+}
+
+
+.HighlightedProject {
+  position: relative;
+}
+
+.HighlightedProject > .Title {
+  font-size: 100px;
+  margin: 0 var(--page-padding-left);
+  font-weight: 800;
+  margin-top: 120px;
+  width: 80%;
+  color: var(--black);
+  text-shadow: 0 4px 32px rgba(255, 255, 255, 0.25);
+}
+
+.HighlightedProject > .Details {
+  font-size: 32px;
+  margin: 32px var(--page-padding-left);
+  width: 50%;
+  margin-bottom: 32px;
+  color: rgb(53, 53, 53);
+  font-weight: 800;
+  text-shadow: 0 4px 32px rgba(255, 255, 255, 0.25);
+}
+
+.HighlightedProject > .ActionButton {
+  background-color: var(--accent);
+  border: none;
+  color: white;
+
+  font-weight: 500;
+  padding: 0 24px;
+  height: 42px;
+  border-radius: 1000px;
+  cursor: pointer;
+  min-width: 148px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  transition: all 0.1s ease;
+  z-index: 5;
+
+  margin-left: var(--page-padding-left);
+
+  margin-bottom: 120px;
+}
+
+.HighlightedProject > .ActionButton:hover {
+  background-color: var(--accent);
+  border: none;
+  color: white;
+  transform: scale(1.06);
+}

@@ -15,3 +15,35 @@ body {
 .Flex {
   flex: 1;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 1000px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: var(--accent);
+}
+
+::selection {
+  color: white;
+  background: var(--accent);
+}

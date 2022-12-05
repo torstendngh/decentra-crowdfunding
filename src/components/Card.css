@@ -4,11 +4,12 @@
   min-width: 500px;
   border: none;
   background-color: white;
+  color: var(--black);
   padding: 0;
   border-radius: 16px;
   overflow: hidden;
   /* box-shadow: rgba(0, 0, 0, 0.15) 0px 16px 32px -12px; */
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 28px;
   transition: transform 0.15s ease;
   cursor: pointer;
 }
@@ -32,6 +33,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 16px;
+  flex: 1;
 }
 
 .Card > .Details > .Category {
@@ -47,6 +49,14 @@
   font-weight: 800;
   margin: 0;
   margin-bottom: 8px;
+  text-align: start;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .Card > .Details > .Percentage {
@@ -64,5 +74,11 @@
   font-size: 24px;
   font-weight: 200;
   margin: 0;
-  color: black;
+  color: var(--black);
+}
+
+.Card > .ProgressBar {
+  height: 8px;
+  background-color: var(--accent);
+  border-radius: 1000px;
 }
