@@ -1,0 +1,10 @@
+.ProjectPage > .Section1 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.ProjectPage > .SubSection1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

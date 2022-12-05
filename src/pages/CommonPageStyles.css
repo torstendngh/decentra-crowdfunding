@@ -9,7 +9,6 @@
 .Page :is(h1) {
   font-size: 64px;
   margin: 32px 0 32px var(--page-padding-left);
-
 }
 
 .Page :is(h3) {
@@ -32,4 +31,31 @@
 
 .CardCarousell:hover:-webkit-scrollbar-thumb {
   background: gray;
+}
+
+.BackButton {
+  background-color: #E8E8E8;
+  border: none;
+  color: var(--black);
+
+  font-weight: 500;
+  padding: 0 24px;
+  height: 42px;
+  border-radius: 1000px;
+  cursor: pointer;
+  min-width: 148px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  transition: all 0.1s ease;
+  z-index: 5;
+
+  margin-left: var(--page-padding-left);
+}
+
+.BackButton:hover {
+  border: none;
+  transform: scale(1.06);
 }
