@@ -1,13 +1,16 @@
+.DiscoverPage {
+  overflow: hidden;
+  width: 100vw;
+}
+
 .HighlightedProjectImage {
   position: absolute;
   top: 0;
   right: 0;
   width: 100%;
   z-index: -1;
-  pointer-events: none;
   mask-image: linear-gradient(195deg, black, transparent 50%);
   filter: blur(4px) grayscale(100%);
-  transform: scale(1.04);
 }
 
 
