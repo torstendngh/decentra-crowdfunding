@@ -1,5 +1,6 @@
 :root {
   --accent: #53c181;
+  --accent-shadow: #53c1814c;
   --black: rgb(34, 36, 40);
   --page-padding-left: 100px;
 }
