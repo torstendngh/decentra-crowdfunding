@@ -22,6 +22,7 @@ function DiscoverPage() {
       <h3>Top Projects</h3>
       <div className="CardCarousell">
         <Card
+          to={"/project"}
           imgSrc={"./placeholderImages/1.jpg"}
           category={"Third World"}
           title={"Very Long Title of Crowdfund"}
@@ -31,6 +32,7 @@ function DiscoverPage() {
           currency={"ETH"}
         />
         <Card
+          to={"/project"}
           imgSrc={"./placeholderImages/2.jpg"}
           category={"Polution"}
           title={"Title of Crowdfund"}
@@ -40,6 +42,7 @@ function DiscoverPage() {
           currency={"ETH"}
         />
         <Card
+          to={"/project"}
           imgSrc={"./placeholderImages/3.jpg"}
           category={"Energy"}
           title={"Title of Crowdfund"}
@@ -49,6 +52,7 @@ function DiscoverPage() {
           currency={"ETH"}
         />
         <Card
+          to={"/project"}
           imgSrc={"./placeholderImages/4.jpg"}
           category={"Disaster"}
           title={"Title of Crowdfund"}
@@ -57,10 +61,31 @@ function DiscoverPage() {
           completedAmount={0.5}
           currency={"ETH"}
         />
+        <Card
+          to={"/project"}
+          imgSrc={"./placeholderImages/2.jpg"}
+          category={"Polution"}
+          title={"Title of Crowdfund"}
+          percentage={69}
+          currentAmount={0.356}
+          completedAmount={0.5}
+          currency={"ETH"}
+        />
+        <Card
+          to={"/project"}
+          imgSrc={"./placeholderImages/2.jpg"}
+          category={"Polution"}
+          title={"Title of Crowdfund"}
+          percentage={69}
+          currentAmount={0.356}
+          completedAmount={0.5}
+          currency={"ETH"}
+        />
       </div>
       <h3>Nearly completed</h3>
       <div className="CardCarousell">
         <Card
+          to={"/project"}
           imgSrc={"./placeholderImages/1.jpg"}
           category={"Third World"}
           title={"Title of Crowdfund"}
@@ -70,6 +95,7 @@ function DiscoverPage() {
           currency={"ETH"}
         />
         <Card
+          to={"/project"}
           imgSrc={"./placeholderImages/2.jpg"}
           category={"Polution"}
           title={"Title of Crowdfund"}
@@ -79,6 +105,7 @@ function DiscoverPage() {
           currency={"ETH"}
         />
         <Card
+          to={"/project"}
           imgSrc={"./placeholderImages/3.jpg"}
           category={"Energy"}
           title={"Title of Crowdfund"}
@@ -88,10 +115,31 @@ function DiscoverPage() {
           currency={"ETH"}
         />
         <Card
+          to={"/project"}
           imgSrc={"./placeholderImages/4.jpg"}
           category={"Disaster"}
           title={"Title of Crowdfund"}
           percentage={61}
+          currentAmount={0.356}
+          completedAmount={0.5}
+          currency={"ETH"}
+        />
+        <Card
+          to={"/project"}
+          imgSrc={"./placeholderImages/2.jpg"}
+          category={"Polution"}
+          title={"Title of Crowdfund"}
+          percentage={69}
+          currentAmount={0.356}
+          completedAmount={0.5}
+          currency={"ETH"}
+        />
+        <Card
+          to={"/project"}
+          imgSrc={"./placeholderImages/2.jpg"}
+          category={"Polution"}
+          title={"Title of Crowdfund"}
+          percentage={69}
           currentAmount={0.356}
           completedAmount={0.5}
           currency={"ETH"}

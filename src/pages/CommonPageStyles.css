@@ -36,7 +36,6 @@
 .BackButton {
   background-color: #E8E8E8;
   border: none;
-  color: var(--black);
 
   font-weight: 500;
   padding: 0 24px;

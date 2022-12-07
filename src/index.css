@@ -5,6 +5,7 @@ body {
   height: 100vh;
   font-family: sora;
   font-weight: 400;
+  color: var(--black);
 }
 
 @font-face {

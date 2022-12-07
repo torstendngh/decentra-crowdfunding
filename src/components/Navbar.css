@@ -39,6 +39,11 @@
   cursor: pointer;
 }
 
+.Navbar > .ButtonContainer > .ProfilePicture {
+  height: 100%;
+  width: 100%;
+}
+
 .Navbar > .ButtonContainer > .CreateProjectButton {
   background-color: var(--accent);
   border: none;

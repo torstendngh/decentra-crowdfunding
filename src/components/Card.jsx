@@ -1,9 +1,17 @@
 import "./Card.css"
+import { useNavigate } from 'react-router-dom'
 
-function Card({ size, imgSrc, category, title, percentage, currentAmount, completedAmount, currency}) {
+function Card({ imgSrc, category, title, percentage, currentAmount, completedAmount, currency, to}) {
+
+  const navigate = useNavigate()
 
   return (
-    <button className="Card">
+    <button
+      className="Card"
+      type="button"
+      onClick={() => navigate(to)}
+      to={to}
+    >
       <img className="Image" src={imgSrc} alt={title} />
       <div className="Details">
         <p className="Category">{category}</p>
