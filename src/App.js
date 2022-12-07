@@ -6,7 +6,7 @@ import './vars.css'
 import './normalize.css'
 import './pages/CommonPageStyles.css'
 import ProjectPage from './pages/ProjectPage';
-import FundedByMePage from "./pages/FundedByMePage";
+import SupportedPage from "./pages/SupportedPage";
 import MyProjectsPage from "./pages/MyProjectsPage";
 import SearchPage from "./pages/SearchPage";
 import CreateProjectPage from "./pages/CreateProjectPage";
@@ -20,7 +20,7 @@ function App() {
         <div className="Page Flex">
           <Routes>
             <Route index element={<DiscoverPage/>}/>
-            <Route path="funded-by-me" element={<FundedByMePage/>}/>
+            <Route path="supported" element={<SupportedPage/>}/>
             <Route path="my-projects" element={<MyProjectsPage/>}/>
             <Route path="search" element={<SearchPage/>}/>
 

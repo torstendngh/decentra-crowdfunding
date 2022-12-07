@@ -55,6 +55,5 @@
 }
 
 .BackButton:hover {
-  border: none;
   transform: scale(1.06);
 }
