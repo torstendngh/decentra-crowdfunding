@@ -22,7 +22,7 @@ function DiscoverPage() {
           to={"/project"}
           imgSrc={"./placeholderImages/1.jpg"}
           category={"Third World"}
-          title={"Very Long Title of Crowdfund"}
+          title={"Build a new school"}
           percentage={89}
           currentAmount={0.356}
           completedAmount={0.5}
@@ -31,8 +31,8 @@ function DiscoverPage() {
         <Card
           to={"/project"}
           imgSrc={"./placeholderImages/2.jpg"}
-          category={"Polution"}
-          title={"Title of Crowdfund"}
+          category={"Pollution"}
+          title={"Clean up beach"}
           percentage={69}
           currentAmount={0.356}
           completedAmount={0.5}
@@ -42,7 +42,7 @@ function DiscoverPage() {
           to={"/project"}
           imgSrc={"./placeholderImages/3.jpg"}
           category={"Energy"}
-          title={"Title of Crowdfund"}
+          title={"New windpark"}
           percentage={45}
           currentAmount={0.356}
           completedAmount={0.5}
@@ -52,7 +52,7 @@ function DiscoverPage() {
           to={"/project"}
           imgSrc={"./placeholderImages/4.jpg"}
           category={"Disaster"}
-          title={"Title of Crowdfund"}
+          title={"Emergency money"}
           percentage={29}
           currentAmount={0.356}
           completedAmount={0.5}
