@@ -9,12 +9,14 @@ function LoginPage() {
       <div className="FormContainer">
         <p className="Title">Login</p>
         <form action="">
-          <label for="fname">E-mail:</label>
+          <label for="fname">E-mail</label>
           <input type="email" id="fname" name="fname" placeholder="E-mail"></input>
-          <label for="lname">Password:</label>
+          <label for="lname">Password</label>
           <input type="password" id="lname" name="lname" placeholder="Password"></input>
-          <input type="submit" value="Accept"></input>
+          <input type="submit" value="Sign In"></input>
         </form>
+        <p className="Or">- or -</p>
+        <button className="CreateAccountButton">Create Account</button>
       </div>
     </div>
   )

@@ -20,6 +20,7 @@
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 28px;
   gap: 0;
+  animation: slide-in-blurred-bottom 0.2s ease both;
 }
 
 .LoginPage > .FormContainer > .Title {
@@ -27,6 +28,13 @@
   font-size: 24px;
   margin-bottom: 24px;
   align-self: center;
+}
+
+.LoginPage > .FormContainer > .Or {
+  font-weight: 800;
+  font-size: 10px;
+  align-self: center;
+  margin: 8px 0;
 }
 
 .LoginPage > .FormContainer > form {
@@ -46,8 +54,13 @@
   margin-bottom: 16px;
   border-radius: 1000px;
   outline: none;
-  border: 2px solid #bfbdcf;
+  border: 3px solid #bfbdcf;
   padding: 8px 16px;
+}
+
+.LoginPage > .FormContainer > form > input[type=email]::placeholder, input[type=password]::placeholder {
+  color: #bfbdcf;
+  font-weight: 200;
 }
 
 .LoginPage > .FormContainer > form > input[type=submit] {
@@ -57,7 +70,7 @@
   border: none;
   color: white;
 
-  font-weight: 500;
+  font-weight: 800;
   padding: 0 24px;
   height: 42px;
   border-radius: 1000px;
@@ -79,4 +92,44 @@
   border: none;
   color: white;
   transform: scale(1.06);
+}
+
+.LoginPage > .FormContainer > .CreateAccountButton {
+
+  background-color: #777489;;
+  color: white;
+  border: none;
+
+  font-weight: 800;
+  padding: 0 24px;
+  height: 42px;
+  border-radius: 1000px;
+  cursor: pointer;
+  min-width: 148px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  transition: all 0.1s ease;
+  z-index: 5;
+}
+
+.LoginPage > .FormContainer > .CreateAccountButton:hover {
+  transform: scale(1.06);
+}
+
+@keyframes slide-in-blurred-bottom {
+  0% {
+    transform: translateY(200px);
+    transform-origin: 50% 100%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
 }
