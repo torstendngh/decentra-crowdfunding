@@ -15,12 +15,12 @@
 .LoginPage > .FormContainer {
   display: flex;
   flex-direction: column;
-  background-color: white;
   padding: 32px;
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 28px;
   gap: 0;
   animation: slide-in-blurred-bottom 0.2s ease both;
+  background: white;
 }
 
 .LoginPage > .FormContainer > .Title {
@@ -44,26 +44,26 @@
 
 .LoginPage > .FormContainer > form > label {
   font-weight: 400;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   font-size: 16px;
   color: #9390a3;
 }
 
-.LoginPage > .FormContainer > form > input[type=email], input[type=password] {
+.LoginPage > .FormContainer > form > input[type=email], .LoginPage > .FormContainer > form > input[type=password] {
   font-weight: 800;
   margin-bottom: 16px;
-  border-radius: 1000px;
+  border-radius: 8px;
   outline: none;
   border: 3px solid #eaeaee;
   padding: 8px 16px;
 }
 
-.LoginPage > .FormContainer > form > input[type=email]::placeholder, input[type=password]::placeholder {
+.LoginPage > .FormContainer > form > input[type=email]::placeholder, .LoginPage > .FormContainer > form > input[type=password]::placeholder {
   color: #bfbdcf;
   font-weight: 200;
 }
 
-.LoginPage > .FormContainer > form > input[type=submit] {
+.LoginPage > .FormContainer > form > .LoginButton {
 
   margin-top: 16px;
   background-color: var(--accent);
@@ -87,16 +87,18 @@
   box-shadow: 0px 16px 32px var(--accent-shadow);
 }
 
-.LoginPage > .FormContainer > form > input[type=submit]:hover {
+.LoginPage > .FormContainer > form > .LoginButton:hover {
   background-color: var(--accent);
   border: none;
   color: white;
   transform: scale(1.06);
 }
 
+
+
 .LoginPage > .FormContainer > .CreateAccountButton {
 
-  background-color: #777489;;
+  background-color: #403c55;
   color: white;
   border: none;
 
@@ -117,19 +119,4 @@
 
 .LoginPage > .FormContainer > .CreateAccountButton:hover {
   transform: scale(1.06);
-}
-
-@keyframes slide-in-blurred-bottom {
-  0% {
-    transform: translateY(200px);
-    transform-origin: 50% 100%;
-    filter: blur(40px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    transform-origin: 50% 50%;
-    filter: blur(0);
-    opacity: 1;
-  }
 }

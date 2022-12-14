@@ -28,6 +28,17 @@
   cursor: pointer;
 }
 
+.Navbar > .LogoContainer > svg {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  transform: scale(1);
+}
+
+.Navbar > .LogoContainer:hover > svg {
+  animation: ping 0.8s ease-in-out infinite both;
+}
+
+
+
 .Navbar > .ButtonContainer {
   display: flex;
   justify-content: flex-end;

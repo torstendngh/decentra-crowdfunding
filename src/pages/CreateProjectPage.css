@@ -1,0 +1,137 @@
+.CreateProjectPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CreateProjectPage > .Background {
+  position: absolute;
+  margin: auto;
+  z-index: -1;
+  height: 95%;
+  margin-right: 20%;
+}
+
+.CreateProjectPage > .FormContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 28px;
+  gap: 0;
+  animation: slide-in-blurred-bottom 0.2s ease both;
+  margin-left: 30%;
+  background: white;
+}
+
+.CreateProjectPage > .FormContainer > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.CreateProjectPage > .FormContainer > .Title {
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 24px;
+  align-self: center;
+}
+
+.CreateProjectPage > .FormContainer > form > label {
+  font-weight: 400;
+  margin-bottom: 4px;
+  font-size: 16px;
+  color: #9390a3;
+}
+
+.CreateProjectPage > .FormContainer > form > .GoalContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.CreateProjectPage > .FormContainer > form > .GoalContainer > input[type=number] {
+  font-weight: 800;
+
+  border-radius: 8px;
+  outline: none;
+  border: 3px solid #eaeaee;
+  padding: 8px 16px;
+}
+
+.CreateProjectPage > .FormContainer > form > input[type=text],
+.CreateProjectPage > .FormContainer > form > input[type=number],
+.CreateProjectPage > .FormContainer > form > textarea  {
+  font-weight: 800;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  outline: none;
+  border: 3px solid #eaeaee;
+  padding: 8px 16px;
+  resize: none;
+}
+
+.CreateProjectPage > .FormContainer > form > input[type=text]::placeholder,
+.CreateProjectPage > .FormContainer > form > input[type=number]::placeholder,
+.CreateProjectPage > .FormContainer > form > textarea::placeholder {
+  color: #bfbdcf;
+  font-weight: 200;
+}
+
+.CreateProjectPage > .FormContainer > form > .CreateProjectButton {
+
+  margin-top: 16px;
+  background-color: var(--accent);
+  border: none;
+  color: white;
+
+  font-weight: 800;
+  padding: 0 24px;
+  height: 42px;
+  border-radius: 1000px;
+  cursor: pointer;
+  min-width: 148px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  transition: all 0.1s ease;
+  z-index: 5;
+
+  margin-bottom: 8px;
+
+  box-shadow: 0px 16px 32px var(--accent-shadow);
+}
+
+.CreateProjectPage > .FormContainer > form > .CreateProjectButton:hover {
+  transform: scale(1.06);
+}
+
+.CreateProjectPage > .FormContainer > form > input[type=file] {
+  font-weight: 800;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  outline: none;
+  border: 3px solid #eaeaee;
+  padding: 8px 16px;
+}
+
+.CreateProjectPage > .FormContainer > form > .CategoryPicker {
+  font-weight: 800;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  outline: none;
+  border: 3px solid #eaeaee;
+  padding: 8px 16px;
+}
+
+.CreateProjectPage > .FormContainer > form > .CategoryPicker > * {
+  padding: 0;
+}
+
+.CreateProjectPage > .FormContainer > form > .Information {
+  align-self: center;
+  color: #9393aa;
+}
