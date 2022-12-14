@@ -11,6 +11,7 @@ import MyProjectsPage from "./pages/MyProjectsPage";
 import SearchPage from "./pages/SearchPage";
 import CreateProjectPage from "./pages/CreateProjectPage";
 import ProfilePage from "./pages/ProfilePage";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="project" element={<ProjectPage/>}/>
             <Route path="create-project" element={<CreateProjectPage/>}/>
             <Route path="profile" element={<ProfilePage/>}/>
+            <Route path="login" element={<LoginPage/>}/>
           </Routes>
         </div>
       </BrowserRouter>

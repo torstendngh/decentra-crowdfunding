@@ -13,9 +13,8 @@
 
 .Page :is(h3) {
   font-size: 32;
-  color: #BFBFBF;
+  color: var(--black);
   margin: 32px 0 16px var(--page-padding-left);
-  text-shadow: 0 4px 32px rgba(255, 255, 255, 0.25);
 }
 
 .CardCarousell {

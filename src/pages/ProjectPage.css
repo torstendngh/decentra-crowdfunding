@@ -5,6 +5,7 @@
 .ProjectPage > .Section1 {
   display: flex;
   align-items: flex-start;
+  flex-direction: row-reverse;
   margin: 0 var(--page-padding-left);
   gap: 32px;
 }
@@ -177,4 +178,8 @@
 
 .ProjectPage > .Section1 > .SubSection1 > .ButtonContainer > button:hover {
   transform: scale(1.06);
+}
+
+.ProjectPage > .TemporarySpace {
+  height: 500px;
 }

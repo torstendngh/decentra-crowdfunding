@@ -1,11 +1,12 @@
 import "./DiscoverPage.css"
 import Card from './../components/Card'
+import {ReactComponent as FriendshiptSVG} from './../icons/undraw_friendship_mni7.svg';
 
 function DiscoverPage() {
 
   return (
     <div className="DiscoverPage">
-      <img className="HighlightedProjectImage" src="./placeholderImages/1.jpg" alt="" />
+      <FriendshiptSVG className="HighlightedProjectImage"/>
       <div className="HighlightedProject">
         <div className="Title">Crowdfund.</div>
         <div className="Details">Crowdfund is a smart contract powered crowdfunding platform that utilizes cryptocurrency for payments.</div>

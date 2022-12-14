@@ -69,6 +69,7 @@ function ProjectPage({ projectID }) {
         </div>
         <img className="Image" src="./placeholderImages/1.jpg" alt="" />
       </div>
+      <div className="TemporarySpace"></div>
     </div>
   );
 }
