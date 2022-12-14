@@ -1,8 +1,14 @@
 import WorkInProgress from "../components/WorkInProgress"
 import './LoginPage.css'
 import {ReactComponent as ConnectSVG} from './../svg/undraw_dreamer_re_9tua.svg';
+import { useEffect } from "react";
 
 function LoginPage() {
+
+  useEffect(() => {
+    document.title = "Crowdfund • Login";
+  }, [])
+
   return (
     <div className="LoginPage">
       <ConnectSVG className="Background"/>

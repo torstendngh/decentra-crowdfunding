@@ -43,11 +43,18 @@
   width: 42px;
   border-radius: 1000px;
   cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  overflow: hidden;
 }
 
-.Navbar > .ButtonContainer > .ProfilePicture {
-  height: 100%;
-  width: 100%;
+.Navbar > .ButtonContainer > .ProfileButton > .ProfilePicture {
+  height: 42px;
+  width: 42px;
 }
 
 .Navbar > .ButtonContainer > .CreateProjectButton {

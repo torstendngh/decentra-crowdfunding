@@ -1,11 +1,18 @@
 import "./ProjectPage.css"
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function ProjectPage({ projectID }) {
+
+
 
   let project = projectID //TODO projectID to object
 
   let navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = "Crowdfund • " + project?.title || "Project Title";
+  }, [])
 
   return (
     <div className="ProjectPage">

@@ -16,6 +16,7 @@ function DiscoverPage() {
   }
 
   useEffect(() => {
+    document.title = "Crowdfund • Discover";
     discoverPage.current.onscroll = () => {
       setBackgroundOpacity(scale(discoverPage.current.scrollTop, 0.0, 400.0, 1.0, 0.0))
       setBackgroundBlur(scale(discoverPage.current.scrollTop, 0.0, 400.0, 0, 32))
