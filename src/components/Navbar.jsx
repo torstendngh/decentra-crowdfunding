@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <div className="Navbar">
       <div className="LogoContainer">
-        Crowdfund
+        Crowdfund.
       </div>
       <div className="TabContainer">
         <NavbarTabButton

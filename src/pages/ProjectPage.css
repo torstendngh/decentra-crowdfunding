@@ -1,3 +1,7 @@
+.ProjectPage {
+	animation: slide-in-blurred-bottom 0.2s ease both;
+}
+
 .ProjectPage > .BackButton {
   margin: 32px 0 32px var(--page-padding-left);
 }
@@ -182,4 +186,19 @@
 
 .ProjectPage > .TemporarySpace {
   height: 500px;
+}
+
+@keyframes slide-in-blurred-bottom {
+  0% {
+    transform: translateY(200px);
+    transform-origin: 50% 100%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
 }

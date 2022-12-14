@@ -1,22 +1,22 @@
 .DiscoverPage {
-  overflow: hidden;
+  overflow: overlay;
   width: 100vw;
 }
 
-.HighlightedProjectImage {
+.BackgroundSVG {
   position: absolute;
   top: 0;
   right: 5%;
   z-index: -1;
-  mask-image: linear-gradient(180deg, black 95%, transparent);
+  transition: opacity 0.25s ease, filter 0.25s ease;
 }
 
 
-.HighlightedProject {
+.PageTitle {
   position: relative;
 }
 
-.HighlightedProject > .Title {
+.PageTitle > .Title {
   font-size: 100px;
   margin: 0 var(--page-padding-left);
   font-weight: 800;
@@ -25,17 +25,16 @@
   text-shadow: 0 4px 32px rgba(255, 255, 255, 0.25);
 }
 
-.HighlightedProject > .Details {
+.PageTitle > .Details {
   font-size: 32px;
   margin: 32px var(--page-padding-left);
   width: 50%;
   margin-bottom: 32px;
-  color: rgb(53, 53, 53);
   font-weight: 800;
   text-shadow: 0 4px 32px rgba(255, 255, 255, 0.25);
 }
 
-.HighlightedProject > .ActionButton {
+.PageTitle > .ActionButton {
   background-color: var(--accent);
   border: none;
   color: white;
@@ -61,7 +60,7 @@
   margin-bottom: 120px;
 }
 
-.HighlightedProject > .ActionButton:hover {
+.PageTitle > .ActionButton:hover {
   background-color: var(--accent);
   border: none;
   color: white;

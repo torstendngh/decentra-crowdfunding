@@ -1,0 +1,82 @@
+.LoginPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginPage > .Background {
+  position: absolute;
+  margin: auto;
+  z-index: -1;
+  height: 95%;
+}
+
+.LoginPage > .FormContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 28px;
+  gap: 0;
+}
+
+.LoginPage > .FormContainer > .Title {
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 24px;
+  align-self: center;
+}
+
+.LoginPage > .FormContainer > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.LoginPage > .FormContainer > form > label {
+  font-weight: 400;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #9390a3;
+}
+
+.LoginPage > .FormContainer > form > input[type=email], input[type=password] {
+  font-weight: 800;
+  margin-bottom: 16px;
+  border-radius: 1000px;
+  outline: none;
+  border: 2px solid #bfbdcf;
+  padding: 8px 16px;
+}
+
+.LoginPage > .FormContainer > form > input[type=submit] {
+
+  margin-top: 16px;
+  background-color: var(--accent);
+  border: none;
+  color: white;
+
+  font-weight: 500;
+  padding: 0 24px;
+  height: 42px;
+  border-radius: 1000px;
+  cursor: pointer;
+  min-width: 148px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  transition: all 0.1s ease;
+  z-index: 5;
+
+  box-shadow: 0px 16px 32px var(--accent-shadow);
+}
+
+.LoginPage > .FormContainer > form > input[type=submit]:hover {
+  background-color: var(--accent);
+  border: none;
+  color: white;
+  transform: scale(1.06);
+}
