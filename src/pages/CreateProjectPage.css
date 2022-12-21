@@ -54,9 +54,10 @@
 .CreateProjectPage > .FormContainer > form > .GoalContainer > input[type=number] {
   font-weight: 800;
 
-  border-radius: 8px;
+  border-radius: 0px;
   outline: none;
-  border: 3px solid #eaeaee;
+  border: none;
+  border-bottom: 3px solid #eaeaee;
   padding: 8px 16px;
 }
 
@@ -65,9 +66,10 @@
 .CreateProjectPage > .FormContainer > form > textarea  {
   font-weight: 800;
   margin-bottom: 16px;
-  border-radius: 8px;
+  border-radius: 0;
   outline: none;
-  border: 3px solid #eaeaee;
+  border: none;
+  border-bottom: 3px solid #eaeaee;
   padding: 8px 16px;
   resize: none;
 }

@@ -11,7 +11,6 @@
   transition: opacity 0.1s linear, filter 0.1s linear;
 }
 
-
 .PageTitle {
   position: relative;
 }
@@ -34,7 +33,14 @@
   text-shadow: 0 4px 32px rgba(255, 255, 255, 0.25);
 }
 
-.PageTitle > .ActionButton {
+.PageTitle > .ButtonContainer {
+  margin-bottom: 200px;
+  display: flex;
+  margin-left: var(--page-padding-left);
+  gap: 16px;
+}
+
+.PageTitle > .ButtonContainer > .ActionButton {
   background-color: var(--accent);
   border: none;
   color: white;
@@ -52,17 +58,36 @@
   position: relative;
   transition: all 0.1s ease;
   z-index: 5;
-
-  margin-left: var(--page-padding-left);
-
   box-shadow: 0px 16px 32px var(--accent-shadow);
-
-  margin-bottom: 200px;
 }
 
-.PageTitle > .ActionButton:hover {
+.PageTitle > .ButtonContainer > .ActionButton:hover {
   background-color: var(--accent);
   border: none;
   color: white;
+  transform: scale(1.06);
+}
+
+.PageTitle > .ButtonContainer > .SecondaryButton {
+
+  font-weight: 500;
+  padding: 0 24px;
+  height: 42px;
+  border-radius: 1000px;
+  cursor: pointer;
+  min-width: 148px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  transition: all 0.1s ease;
+  z-index: 5;
+  background-color: #403c55;
+  color: white;
+  border: none;
+}
+
+.PageTitle > .ButtonContainer > .SecondaryButton:hover {
   transform: scale(1.06);
 }
